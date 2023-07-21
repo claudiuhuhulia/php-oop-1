@@ -12,11 +12,13 @@ class Movie
         $this->genre = $genre;
         $this->id = $id;
     }
+    public function getTitle_Genre()
+    {
+        return $this->title . '<br><br>' . $this->genre;
+    }
 }
 
-$movie_1 = new Movie('Titanic', 'Drama', 1);
 
-$movie_2 = new Movie('Madagascar', 'Animation', 2)
 
 ?>
 
@@ -30,7 +32,9 @@ $movie_2 = new Movie('Madagascar', 'Animation', 2)
 </head>
 
 <body>
+    <section id="movies">
 
+    </section>
 </body>
 
 </html>
