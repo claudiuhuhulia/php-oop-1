@@ -16,4 +16,7 @@ class Movie
     {
         return $this->title . '<br><br>' . $this->genre;
     }
+    /*     public function getCast(){
+        if
+    } */
 }
