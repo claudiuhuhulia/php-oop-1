@@ -16,7 +16,10 @@ include __DIR__ . './db/movies.php'
 
 <body>
     <section id="movies">
-
+        <?php foreach ($movies as $movie) : ?>
+            <h1>Titolo: <?= $movie['title'] ?></h1>
+            <h3>Genere: <?= $movie['genre'] ?></h3>
+        <?php endforeach ?>
     </section>
 </body>
 
