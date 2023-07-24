@@ -1,22 +1,25 @@
 <?php
-
-class Movie
+require_once __DIR__ . './Actor.php';
+class Film
 {
+
     public $title;
     public $genre;
-    public $id;
+    private array $cast;
 
-    public function __construct($title, $genre, $id)
+    public function __construct($title, $genre,)
     {
         $this->title = $title;
         $this->genre = $genre;
-        $this->id = $id;
     }
-    public function getTitle_Genre()
+
+    public function setCast(array $actors)
     {
-        return $this->title . '<br><br>' . $this->genre;
+        $this->cast = $actors;
     }
-    /*     public function getCast(){
-        if
-    } */
+
+    public function getCast()
+    {
+        return $this->cast;
+    }
 }
